@@ -1,6 +1,6 @@
 cask "amperfy" do
-  version "2.1.1-hisgarden.1"
-  sha256 "81d90416678c0edc47e0eee203669ab156bd74b06274c86161f37aa0ab18dc54"
+  version "2.1.1-hisgarden.2"
+  sha256 "c1ead3d807ff2bab2f25057c115de578fe13977d9d7e2ee9269ca034434fa745"
 
   url "https://github.com/hisgarden/amperfy/releases/download/v#{version}/Amperfy.app.zip"
   name "Amperfy"
