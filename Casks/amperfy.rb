@@ -1,8 +1,8 @@
 cask "amperfy" do
-  version "2.1.1-hisgarden.2"
-  sha256 "c1ead3d807ff2bab2f25057c115de578fe13977d9d7e2ee9269ca034434fa745"
+  version "2.1.1-hisgarden.3"
+  sha256 "915d5fa76ebad3247821c8be20894619abb9f85d7ae0767448267cb1c9ab857c"
 
-  url "https://github.com/hisgarden/amperfy/releases/download/v#{version}/Amperfy.app.zip"
+  url "https://github.com/hisgarden/amperfy/releases/download/v#{version}/Amperfy-v#{version}.zip"
   name "Amperfy"
   desc "Personal fork of Amperfy — Subsonic/Ampache music client (Mac Catalyst)"
   homepage "https://github.com/hisgarden/amperfy"
@@ -10,12 +10,8 @@ cask "amperfy" do
   app "Amperfy.app"
 
   caveats <<~EOS
-    This build is signed with a personal Apple Developer team and is NOT notarized.
-    On first launch, macOS Gatekeeper will block it.
-
-    Workaround — pick one:
-      • Right-click Amperfy.app in Applications → Open → Open again
-      • Or: xattr -d com.apple.quarantine /Applications/Amperfy.app
+    Signed and notarized by the fork maintainer (Developer ID: Jin Wen, NSDC3EDS2G).
+    Installs cleanly — no Gatekeeper workaround required.
 
     CarPlay is disabled in this build (personal teams cannot issue the CarPlay
     Audio entitlement). All other functionality works.
